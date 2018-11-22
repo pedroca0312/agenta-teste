@@ -1,9 +1,14 @@
 <?php
 
-
 class TipoAtividade
 {
     public $tipo_atividade;
+
+
+public function __construct($tipo_atividade)
+{
+    $this->tipo_atividade = $tipo_atividade;
+}
 
     /**
      * @return mixed
@@ -20,4 +25,5 @@ class TipoAtividade
     {
         $this->tipo_atividade = $tipo_atividade;
     }
+
 }

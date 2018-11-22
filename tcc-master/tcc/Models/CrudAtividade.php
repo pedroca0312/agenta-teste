@@ -86,21 +86,4 @@ class CrudAtividade
         $res = $this->conexao->query($sql);
     }
 
-    public function TipoAtividade(){
-        $this->conexao = BDConection::getConexao();
-
-        $sql = "select * from tipo_atividade";
-
-        $res = $this->conexao->query($sql);
-
-        $tp = [];
-
-        $tipo_atividades = $res->fetchAll(PDO::FETCH_ASSOC);
-
-        foreach ($tipo_atividades as $tipo_atividade) {
-            $at[] = new TipoAtividade($tipo_atividade['tipo_atividade']);
-        }
-        return $at;
-    }
-
 }
