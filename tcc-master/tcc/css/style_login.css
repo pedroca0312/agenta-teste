@@ -1,6 +1,6 @@
  .btn-primary {
-     width: 400px;
-     height: 50px;
+     width: 83%;
+     height: 5%;
      background-color: #34ce57;
      border-color: #34ce57;
  }
@@ -11,8 +11,8 @@
 }
 
  .form-control{
-     width: 400px;
-     height: 50px;
+     width: 83%;
+     height: 5%;
 
  }
 
@@ -25,11 +25,11 @@
  .suprema{
      margin-left: 3%;
      margin-right: 45%;
-     margin-top: 4%;
+     margin-top: 3%;
  }
 
  h1{
-     font-size: 60px;
+     font-size: 400%;
      margin-left: 21%;
      font-family: "Courier New", Courier, monospace;
      font-weight: bold;
@@ -39,17 +39,17 @@
 
  #cadastro {
      margin-left: 28%;
-     font-size: 20px;
+     font-size: 130%;
  }
 
  #esqueceu_senha{
-     margin-left: 20%;
-     font-size: 20px;
+     margin-left: 17%;
+     font-size: 130%;
  }
 
  h2{
      text-align: center;
-     font-size: 45px;
+     font-size: 330%;
      font-family: "Courier New", Courier, monospace;
      font-weight: bold;
  }
@@ -57,7 +57,7 @@
 
 
  h3{
-     font-size: 28px;
+     font-size: 180%;
      text-align: center;
      font-family: "Courier New", Courier, monospace;
      color: black;
@@ -66,10 +66,10 @@
 
  img{
      margin-left: 15%;
-     margin-bottom: 8%;
+     margin-bottom: 7.5%;
      margin-top: 1%;
-     width: 300px;
-     height: 250px;
+     width: 26%;
+     height: 24%;
 
 
  }
@@ -83,21 +83,19 @@
      padding-bottom: 4%;
      padding-left: 2%;
      padding-right: 2%;
-     border-radius: 10px;
+     border-radius: 20px;
      background-color: white;
-     /*background: rgba(0, 0, 0, 0.35);*/
 
  }
 
  .box{
     border: solid;
-    margin-right: 50%;
-    width: 600px;
-    padding-left: 10%;
+    margin-right: 47%;
+    padding-left: 8%;
     padding-bottom: 3%;
     padding-top: 3%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     font-family: "Courier New", Courier, monospace;
 
  }
@@ -114,7 +112,7 @@
          padding-bottom: 3%;
          padding-top: 3%;
          background-color: white;
-         border-radius: 10px;
+         border-radius: 20px;
          font-family: "Courier New", Courier, monospace;
 
      }
