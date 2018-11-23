@@ -1,11 +1,7 @@
 <?php
-
-    @session_start();
-
-    if (!isset($_SESSION['esta_logado']) || $_SESSION['esta_logado'] != true){
-        header("location: http://www.google.com");
-    }
-
+require_once __DIR__."/../Models/CrudTipoAtividade.php";
+require_once __DIR__."/../Models/BDConection.php";
+require_once __DIR__."/../Models/TipoAtividade.php";
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -31,9 +27,9 @@
   </div>
         <div id="tipo_atividade">
 
-            <select  class="btn btn-secondary dropdown-toggle" name="tipo_atividade" id="tipo_atividade"><?php foreach ($atividades as $atividade): ?>
+            <select  class="btn btn-secondary dropdown-toggle" name="tipo_atividade" id="tipo_atividade"><?php foreach ($tipo_atividades as $tipo_atividade): ?>
 
-                    <option value="<?= $atividade->getTipoAtividade()?>"><?= $atividade->GetTipoAtividade()?></option>
+                    <option value="<?= $tipo_atividade->getTipoAtividade()?>"><?= $tipo_atividade->getTipoAtividade()?></option>
 
                 <?php endforeach;?>
 

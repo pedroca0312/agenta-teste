@@ -15,12 +15,12 @@ class CrudTurma
 
         $res = $this->conexao->query($sql);
 
-        $usu = [];
-
         $turmas = $res->fetchAll(PDO::FETCH_ASSOC);
+
         foreach ($turmas as $turma){
             $turm[] = new Turma($turma['ano'], $turma['nome'],$turma['id_turma'], $turma['id_curso']);
         }
+
         return $turm;
 
 

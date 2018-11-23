@@ -6,7 +6,8 @@ require_once __DIR__."/TipoAtividade.php";
 class CrudTipoAtividade{
 
     public $conexao;
-    public $tipo_atividade;
+
+
 public function GetTipoAtividade(){
 
     $this->conexao = BDConection::getConexao();
@@ -15,15 +16,17 @@ public function GetTipoAtividade(){
 
     $res = $this->conexao->query($sql);
 
-    $tp = [];
-
     $tipo_atividades = $res->fetchAll(PDO::FETCH_ASSOC);
-
 
     foreach ($tipo_atividades as $tipo_atividade) {
         $tp[] = new TipoAtividade($tipo_atividade['tipo_atividade']);
     }
+   // print_r($tp);
+
     return $tp;
 
 }
+
+
+
 }

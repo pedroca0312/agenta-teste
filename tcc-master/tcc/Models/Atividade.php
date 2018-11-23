@@ -7,19 +7,19 @@ class Atividade
     public $data_previsao;
     public $id_turma;
     public $id_disciplina;
-    public $tipo_atividade;
+    //public $tipo_atividade;
 
-    public function __construct($id_atividade,$nome_atividade,$data_previsao,$tipo_atividade)
+    public function __construct($id_atividade,$nome_atividade,$data_previsao/*,$tipo_atividade*/)
     {
         $this->id_atividade = $id_atividade;
         $this->nome_atividade = $nome_atividade;
         $this->data_previsao = $data_previsao;
-        $this->tipo_atividade = $tipo_atividade;
+        //$this->tipo_atividade = $tipo_atividade;
        // $this->id_turma = $_SESSION['id_turma'];
         // $this->id_disciplina = $id_disciplina;
     }
 
-    public function getTipoAtividade()
+    /*public function getTipoAtividade()
     {
         return $this->tipo_atividade;
     }
@@ -28,7 +28,7 @@ class Atividade
     {
         $this->tipo_atividade = $tipo_atividade;
     }
-   
+   */
     public function getIdAtividade()
     {
         return $this->id_atividade;

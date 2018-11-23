@@ -31,7 +31,7 @@ class CrudAtividade
 
 
         foreach ($atividades as $atividade) {
-            $at[] = new Atividade($atividade['id_atividade'],$atividade['nome_atividade'], $atividade['data_previsao'],$atividade['tipo_atividade']);
+            $at[] = new Atividade($atividade['id_atividade'],$atividade['nome_atividade'], $atividade['data_previsao']/*,$atividade['tipo_atividade']*/);
         }
         return $at;
 
@@ -48,7 +48,7 @@ class CrudAtividade
         $atividade= $res->fetch(PDO::FETCH_ASSOC);
 
 
-        $at = new Atividade($atividade['id_atividade'],$atividade['nome_atividade'], $atividade['data_previsao'],$atividade['tipo_atividade']);
+        $at = new Atividade($atividade['id_atividade'],$atividade['nome_atividade'], $atividade['data_previsao']/*,$atividade['tipo_atividade']*/);
         return $at;
 
     }
@@ -56,7 +56,7 @@ class CrudAtividade
     public function cadastroAgenda(Atividade $atividade){
         $this->conexao = BDConection::getConexao();
 
-        $sql = "insert into atividade (nome_atividade,data_previsao, id_turma,tipo_atividade) values ('".$atividade->getNome_atividade()."','".$atividade->getDataPrevisao()."','".$_SESSION['id_turma']."','".$atividade->getTipoAtividade()."')";
+        $sql = "insert into atividade (nome_atividade,data_previsao, id_turma,tipo_atividade) values ('".$atividade->getNome_atividade()."','".$atividade->getDataPrevisao()."','".$_SESSION['id_turma']."'";
 
         $res = $this->conexao->query($sql);
     }
