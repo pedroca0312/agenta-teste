@@ -16,7 +16,7 @@ session_start();
 <br>
 <img src="../../imagens/imagens/logo-1.png"> <br> <br>
 <br>
-<h2>Turma:<?= $_SESSION['nome_turma'];?> <br><br>Nome:<?=$_SESSION['username'];?> <br><br></h2>
+<h1>Turma:<?= $_SESSION['nome_turma'];?> <br><br>Nome:<?=$_SESSION['username'];?> <br><br></h1>
 
 <div id=CadastrarAtividade>
     <a href="../controlador/atividade.php?acao=cadastrar"><button name="Cadastrar" type="submit" class="btn btn-secondary btn-lg">Cadastrar Atividade</button></a>
