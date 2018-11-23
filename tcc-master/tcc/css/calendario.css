@@ -42,6 +42,10 @@ button.fc-month-button.btn.btn-primary{
     background: #34ce57;
     border: #34ce57;
 }
+button.fc-month-button.btn.btn-primary:hover{
+    background: #1e6500;
+    border: #34ce57;
+}
 button.fc-month-button.btn.btn-primary.active{
     background: #1e6500;
     border: #34ce57;
