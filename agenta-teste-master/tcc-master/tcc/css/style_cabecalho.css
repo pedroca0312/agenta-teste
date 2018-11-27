@@ -1,0 +1,78 @@
+
+.tudo{
+    border: solid;
+    margin-right: 82%;
+    padding-bottom: 25%;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: "Courier New", Courier, monospace;
+    }
+
+img{
+    margin-left: 0%;
+    width: 100%;
+    height: 25%;
+}
+
+.btn-secondary{
+    width: 100%;
+    height: 50px;
+    background-color: #34ce57;
+    border-color: #34ce57;
+}
+
+.btn-secondary:hover{
+    background-color: #8fdf82;
+    border-color: #8fdf82;
+
+}
+h1{
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+}
+
+@media screen and (max-width: 980px) {
+
+
+
+}
+.tudo{
+    border: solid;
+    margin-right:0%;
+    marin-top:80%;
+    padding-bottom: 25%;
+    border-left: transparent;
+    border-top: transparent;
+    border-bottom: transparent;
+    padding-left: 1%;
+    padding-right: 1%;
+    font-family: "Courier New", Courier, monospace;
+}
+img{
+    position: fixed;
+    margin-top:90%;
+    margin-left: 0%;
+    width: 20%;
+    height: 10%;
+}
+.btn-secondary{
+    position: fixed;
+    margin-top: 65%;
+    margin-left: 65%;
+    width: 25%;
+    height: 7%;
+    background-color: #34ce57;
+    border-color: #34ce57;
+    font-size: 50%;
+}
+h1{
+    font-size: 150%;
+    margin-left: 20%;
+    position: fixed;
+    margin-top: 70%;
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+}
